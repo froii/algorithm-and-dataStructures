@@ -16,7 +16,7 @@ def koch_snowflake(size, level):
     window.bgcolor("white")
 
     t = turtle.Turtle()
-    t.speed(0)
+    t.speed(111)
     t.penup()
     t.goto(-size / 2, 0)
     t.pendown()
