@@ -11,12 +11,12 @@ def koch_curve(t, size, level):
             t.left(angle)
 
 
-def koch_snowflake(size, level):
+def koch_snowflake(size, speed, level):
     window = turtle.Screen()
     window.bgcolor("white")
 
     t = turtle.Turtle()
-    t.speed(111)
+    t.speed(speed)
     t.penup()
     t.goto(-size / 2, 0)
     t.pendown()
@@ -29,7 +29,7 @@ def koch_snowflake(size, level):
 
 
 level = int(input("Введіть рівень рекурсії (0-5):"))
-koch_snowflake(500, level=level)
+koch_snowflake(500, 111, level=level)
 
 # 1. Код виконується. Програма візуалізує фрактал «сніжинка Коха».
 # 2. Користувач має можливість вказати рівень рекурсії.
