@@ -91,7 +91,7 @@ def main():
         avg_times[algo_name] = total_time / count
         print(f"{algo_name:25} {avg_times[algo_name]:10.6f} секунд")
 
-    fastest_overall = min(avg_times, key=avg_times.get)
+    fastest_overall = min(avg_times.keys(), key=lambda x: avg_times[x])
     print(f"\nНайшвидший алгоритм в цілому: {fastest_overall}")
 
 

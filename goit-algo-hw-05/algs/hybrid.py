@@ -73,7 +73,6 @@ def hybrid_search(text, pattern):
     modulus = 101
     pattern_hash = polynomial_hash(pattern, base, modulus)
     shift_table = build_shift_table(pattern)
-    h_multiplier = pow(base, pattern_length - 1) % modulus
 
     i = 0  # Поточна позиція в тексті
 
