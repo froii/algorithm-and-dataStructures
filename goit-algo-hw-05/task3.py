@@ -1,13 +1,10 @@
 import timeit
 
-from algs import (
-    aho_corasick_search,
-    boyer_moore_search,
-    hybrid_search,
-    hybrid_search_optimized,
-    kmp_search,
-    rabin_karp_search,
-)
+from algs.aho_corasick import aho_corasick_search
+from algs.boyer_moore import boyer_moore_search
+from algs.hybrid import hybrid_search, hybrid_search_optimized
+from algs.kmp import kmp_search
+from algs.rabin_karp import rabin_karp_search
 
 
 def read_file(filename):
